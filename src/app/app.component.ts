@@ -10,4 +10,5 @@ import { HeaderComponent } from "./components/header/header.component";
 })
 export class AppComponent {
   title = 'portfolio_front';
+  
 }
