@@ -1,0 +1,22 @@
+<div class="body">
+    <div class="formexp">
+        <h3>Toda mi formación:</h3>
+        @for(form of arrForm.slice().reverse(); track form._id){
+            <p><strong>{{form.title}}</strong></p>
+            <p>{{form.institution}} | {{form.startYear}} @if(form.endYear){ - {{form.endYear}}}</p>
+            @if(!$last) {
+                <hr>
+            }
+        }
+    </div>
+    <div class="formexp">
+        <h3>Toda mi experiencia:</h3>
+        @for(exp of arrExp.slice().reverse(); track exp._id){
+            <p><strong>{{exp.title}}</strong></p>
+            <p>{{exp.description}} | {{exp.startYear}} @if(exp.endYear){ - {{exp.endYear}}}</p>
+            @if(!$last) {
+            <hr>
+            }
+        }
+    </div>
+</div>
