@@ -1,0 +1,23 @@
+.proyectImage {
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 40%;
+    width: 200px;
+    height: 200px;
+    background-color: #ffd4ac;
+    border: 3px solid grey;
+
+    a {
+        display: block;
+        height: 100%;
+    }
+}
+
+.title {
+    display: flex;
+    
+    p {
+        margin: 21.280px 5px;
+    }
+}

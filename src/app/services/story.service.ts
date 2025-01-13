@@ -4,6 +4,7 @@ import { environment } from '../../environments/environment';
 import { IForm } from '../interfaces/iform.interface';
 import { lastValueFrom } from 'rxjs';
 import { IExp } from '../interfaces/iexp.interface';
+import { IProyects } from '../interfaces/iproyects.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,12 @@ export class StoryService {
   getAllExp(): Promise<IExp[]> {
     return lastValueFrom(
       this.httpClient.get<IExp[]>(this.baseUrl + '/exp')
+    )
+  }
+
+  getAllProyects(): Promise<IProyects[]> {
+    return lastValueFrom(
+      this.httpClient.get<IProyects[]>(this.baseUrl + '/proyects')
     )
   }
 
