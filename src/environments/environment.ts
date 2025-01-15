@@ -1,4 +1,4 @@
 export const environment = {
-    apiUrl: 'POR DETERMINAR',
+    apiUrl: 'https://portforlio-back.onrender.com/api',
     /* imagesUrl: 'POR DETERMINAR' */
 };

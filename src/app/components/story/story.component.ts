@@ -20,8 +20,6 @@ export class StoryComponent {
     try {
       this.arrForm = await this.storyService.getAllForm();
       this.arrExp = await this.storyService.getAllExp();
-      console.log(this.arrForm);
-      console.log(this.arrExp);
     } catch (error) {
       console.log(error);
     }

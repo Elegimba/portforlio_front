@@ -21,7 +21,6 @@ export class ProyectsComponent {
   async ngOnInit() {
     try {
       this.arrProyects = await this.storyService.getAllProyects();
-      console.log(this.arrProyects);
     } catch (error) {
       console.log(error);
     }

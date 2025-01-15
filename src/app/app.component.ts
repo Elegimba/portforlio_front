@@ -24,12 +24,8 @@ export class AppComponent {
   particles: string = '';
 
 
-  ngOnInit() {
-    const particlesContainer = document.getElementById('particles-js');
-    console.log(particlesContainer);
-    
+  ngOnInit() { 
     particlesJS.load('particles-js', '/assets/particles.json', () => {
-      console.log('Particles.js config loaded');
     });
   }
   
