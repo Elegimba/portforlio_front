@@ -45,3 +45,14 @@ ul {
     background-color: #ffd4ac;
     border: 0.1875rem solid var(--border-color);
 }
+
+@media (max-width: 500px) {
+
+    ul {
+        flex-direction: column;
+
+        li {
+            width: 100%;
+        }
+    }
+}
