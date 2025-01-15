@@ -1,7 +1,10 @@
-.body h3 {
+h3 {
     text-align: center;
     margin-top: 20px;
+    color: var(--primary-text-color);
 }
+
+
 
 .codeaboutme {
     max-width: 800px;
@@ -11,11 +14,12 @@
         text-align: start;
         overflow-x: auto;
         padding: 10px;
-        background-color: #f4f4f4;
         border-radius: 5px;
-        border: 2px solid grey;
+        border: 2px solid var(--border-color);
         max-width: 700px;
         margin: 0 auto;
+        background-color: var(--code-background);
+        color: var(--primary-text-color);
 
         &::-webkit-scrollbar {
             height: 8px;
@@ -36,13 +40,13 @@
     max-width: 704px;
     margin: 0 auto;
     padding: 10px;
-    background-color: lightgray;
+    background-color: var(--transparent-background);
 }
 
 .arrow {
     cursor: pointer;
     font-size: 30px;
-    color: #474747;
+    color: var(--primary-text-color);
 
     &:hover {
         color: #000000;
@@ -57,9 +61,39 @@
 
 .hiddenabbout {
     padding: 10px;
+    color: var(--primary-text-color);
 }
 
 ::ng-deep .arrow.show fa-icon svg {
     transform: rotate(-180deg);
     transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+
+    .allabaut {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        .codeaboutme,
+        .bonusabout {
+            margin: 0;
+            padding: 0 0px;
+            min-width: 10px;
+        }
+
+        .hiddenabbout {
+            padding: 0 30px;
+        }
+
+        ::ng-deep .arrow fa-icon svg {
+            transform: rotate(-90deg);
+        }
+
+        ::ng-deep .arrow.show fa-icon svg {
+            transform: rotate(90deg);
+            transition: transform 0.3s ease;
+        }
+    }
 }

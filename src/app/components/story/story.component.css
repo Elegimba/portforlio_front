@@ -1,6 +1,23 @@
 .formexp {
-    background-color: rgba(0, 255, 255, 0.171);
-    border: 1px solid blue;
-    margin: 5px 0;
-    padding: 0 5px;
+    background-color: var(--transparent-background);
+    margin: 15px 0;
+    padding: 10px 60px;
+    color: var(--primary-text-color);
+
+    h3 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .body {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+
+        .formexp {
+            width: 90%;
+        }
+    }
 }

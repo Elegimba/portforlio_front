@@ -7,9 +7,11 @@ import { ProyectsComponent } from "./components/proyects/proyects.component";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+declare var particlesJS: any;
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, AboutComponent, StoryComponent, ProyectsComponent, FontAwesomeModule],
+  imports: [HeaderComponent, AboutComponent, StoryComponent, ProyectsComponent, FontAwesomeModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -18,5 +20,17 @@ export class AppComponent {
 
   faGithub = faGithub;
   faLinkedin = faLinkedin;
+
+  particles: string = '';
+
+
+  ngOnInit() {
+    const particlesContainer = document.getElementById('particles-js');
+    console.log(particlesContainer);
+    
+    particlesJS.load('particles-js', '/assets/particles.json', () => {
+      console.log('Particles.js config loaded');
+    });
+  }
   
 }

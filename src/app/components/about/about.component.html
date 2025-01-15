@@ -1,7 +1,8 @@
 <div class="body">
     <h3>More about me:</h3>
-    <div class="codeaboutme">
-    <pre><code>const aboutMe = &#123;
+    <div class="allabaut">
+        <div class="codeaboutme">
+            <pre><code>const aboutMe = &#123;
     completeName: "Iago González Valverde",
     code: [Javascript, Typescript, HTML, CSS, SQL],
     technologies: &#123;
@@ -13,14 +14,15 @@
             js: ["Node.js", "Express"]
         &#125;,
         databases: ["MySQL", "MongoDB"],
-        otherLibraries: ["Sequelize", "Mongoose", "Multer", "SweetAlert2", "Toastify", "Nodemailer", "Googleapis"]
+        otherLibraries: ["Sequelize", "Mongoose", "Multer", "SweetAlert2", "Toastify", "Nodemailer", "Googleapis", particles.js]
     &#125;,
     currentLearning: ["React", ".NET"]
 &#125;;</code></pre>
-    </div>
-    <div class="bonusabout">
-        <span class="arrow" [class]="{show: show}" (click)="showContent()"><fa-icon [icon]="faChevronDown"></fa-icon></span>
-        @if(show) {
+        </div>
+        <div class="bonusabout">
+            <span class="arrow" [class]="{show: show}" (click)="showContent()"><fa-icon
+                    [icon]="faChevronDown"></fa-icon></span>
+            @if(show) {
             <div class="hiddenabbout">
                 <p><strong>IDIOMAS:</strong> Inglés - Castellano - Gallego</p>
                 <p><strong>OTRAS CARACTERÍSTICAS:</strong></p>
@@ -33,6 +35,7 @@
                     <li>Afinidad a trabajos repetitivos o tediosos.</li>
                 </ul>
             </div>
-        }
+            }
+        </div>
     </div>
 </div>

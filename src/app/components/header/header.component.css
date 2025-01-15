@@ -1,19 +1,41 @@
 .body {
-    margin-top: 100px;
+    padding-top: 100px;
     text-align: center;
+}
+
+.content {
+    color: var(--primary-text-color);
 }
 
 ul {
     padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
     
     li {
         list-style: none;
+        width: 50%;
+        margin: 10px 0;
+        font-size: 150%;
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+                
+            }
+        }
     }
 }
 
 #myphoto {
     margin: 0 auto;
-    /* background-image: url(/images/Self2.png); */
+    background-image: url(/images/Self2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 40%;
@@ -21,5 +43,5 @@ ul {
     height: 200px;
     border-radius: 50%;
     background-color: #ffd4ac;
-    border: 3px solid grey;
+    border: 3px solid var(--border-color);
 }
