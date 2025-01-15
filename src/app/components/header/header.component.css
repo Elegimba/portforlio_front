@@ -1,5 +1,5 @@
 .body {
-    padding-top: 100px;
+    padding-top: 6.25rem;
     text-align: center;
 }
 
@@ -9,7 +9,7 @@
 
 ul {
     padding: 0;
-    max-width: 700px;
+    max-width: 43.75rem;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@ ul {
     li {
         list-style: none;
         width: 50%;
-        margin: 10px 0;
+        margin: 0.625rem 0;
         font-size: 150%;
         
         a {
@@ -39,9 +39,9 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 40%;
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 50%;
     background-color: #ffd4ac;
-    border: 3px solid var(--border-color);
+    border: 0.1875rem solid var(--border-color);
 }

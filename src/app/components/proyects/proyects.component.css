@@ -1,6 +1,6 @@
 .body {
     color: var(--primary-text-color);
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 h2 {
@@ -9,7 +9,7 @@ h2 {
 
 .proyect {
     background-color: var(--transparent-background);
-    padding: 30px;
+    padding: 1.875rem;
 
     ul {
         padding: 0;
@@ -29,7 +29,7 @@ h2 {
             }
 
             fa-icon {
-                font-size: 20px;
+                font-size: 1.25rem;
             }
         }
 
@@ -37,14 +37,14 @@ h2 {
 }
 
 .proyectImage {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 1.875rem auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    max-width: 400px;
-    height: 250px;
+    max-width: 25rem;
+    height: 15.625rem;
     background-color: var(--transparent-background);
-    border: 3px solid var(--border-color);
+    border: 0.1875rem solid var(--border-color);
 
     a {
         display: block;
@@ -73,15 +73,15 @@ h2 {
     display: flex;
     
     p {
-        margin: 21.280px 5px;
+        margin: 1.33rem 0.3125rem;
     }
 }
 
 @media (min-width: 768px) {
 
     .proyectImage {
-        max-width: 1000px;
-        height: 563px;
+        max-width: 62.5rem;
+        height: 35.1875rem;
         background-position: 50% 90%;
     }
 }
