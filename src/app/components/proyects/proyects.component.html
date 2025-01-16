@@ -1,7 +1,10 @@
 <div class="body">
     <h2>MIS PROYECTOS</h2>
     @if(arrProyects.length === 0) {
-        <p>--- Error del back ---</p>
+        <div class="proyect">
+            <p>Cargando...</p>
+            <p>La información se mostrará en menos de un minuto.</p>
+        </div>
     } @else {
         @for(proyect of arrProyects; track proyect._id){
             <div class="proyect">

@@ -2,7 +2,8 @@
     <div class="formexp">
         <h3>Toda mi formación:</h3>
         @if(arrForm.length === 0) {
-            <p>--- Error del back ---</p>
+            <p>Cargando...</p>
+            <p>La información se mostrará en menos de un minuto.</p>
         } @else {
             @for(form of arrForm.slice().reverse(); track form._id){
                 <p><strong>{{form.title}}</strong></p>
@@ -16,7 +17,8 @@
     <div class="formexp">
         <h3>Toda mi experiencia:</h3>
         @if(arrForm.length === 0) {
-        <p>--- Error del back ---</p>
+        <p>Cargando...</p>
+        <p>La información se mostrará en menos de un minuto.</p>
         } @else {
             @for(exp of arrExp.slice().reverse(); track exp._id){
                 <p><strong>{{exp.title}}</strong></p>
